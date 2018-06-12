@@ -13,9 +13,8 @@ boton.addEventListener("click", ()=> {
   const newComments = document.createElement("div");
 
   if(comments.legnth === 0 || comments === null){
-   btn = "none"
-  
-
+    btn.style.display = 'none';
+    
   }
 
   const chck =document.createElement("input");
@@ -45,7 +44,7 @@ boton.addEventListener("click", ()=> {
 })
 
 function contar() {
-  var max = "150";
+  var max = "500";
   var cadena = document.getElementById("comment").value;
   var longitud = cadena.length;
 
