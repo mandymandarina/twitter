@@ -4,9 +4,7 @@ boton.addEventListener("click", ()=> {
 
   let comments = document.getElementById("comment").value;
 
-
   document.getElementById("comment").value =" ";
-
 
   const cont = document.getElementById("cont");
 
@@ -21,6 +19,9 @@ boton.addEventListener("click", ()=> {
   const trash = document.createElement("i");
   trash.classList.add('fas','fa-trash','trash');
 
+  const comment = document.createElement("i");
+  comment.classList.add('fas','fa-comment','comment');
+
 //nodos de texto del texarea
   let textNewComment= document.createTextNode(comments);
 
@@ -29,6 +30,7 @@ boton.addEventListener("click", ()=> {
   newComments.appendChild(chck);
   newComments.appendChild(trash);
   newComments.appendChild(heart);
+  newComments.appendChild(comment);
   newComments.appendChild(contenedorElemento);
 
   cont.appendChild(newComments);
