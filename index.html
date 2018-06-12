@@ -47,7 +47,14 @@
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <textarea class="txt" id="comment" placeholder="Añade un comentario..."></textarea>
+          
+          <div id="cont"> 
+              <label>Caracteres restantes:</label> 
+              <input disabled size="3" value="150" id="contador"> 
+              <br/> 
+              <textarea class="txt" id="comment" placeholder="Escriba aquí..." onKeyDown="contar()" onKeyUp="contar()" rows="8" cols="38"></textarea> 
+         </div> 
+          
         </div>
         <div class="col-6">
           <button type="submit" id="btn">
@@ -64,7 +71,7 @@
     </div>
     <!-- contenedor comentarios -->
     <div class="row">
-      <div class="col-12" id="cont"></div>
+     
       <!-- aca dejare los comentarios -->
     </div>
     </div>
